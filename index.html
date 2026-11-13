@@ -14,7 +14,8 @@
   <div class="app-container">
     <h1>JS Events </h1>
     <p id="docState"></p>
-    
+    <a href="./dialer.html">Dialer UI</a>
+    <a href="./calculator.html">Calculator UI</a>
   </div>
   
   <script>
@@ -25,11 +26,11 @@
   
   document.addEventListener('DOMContentLoaded', ()=>{
     
-      document.querySelector('#docState').textContent = document.readyState
+      document.querySelector('#docState').textContent = `DOM State: ${document.readyState}`
       console.log(document.readyState)
     
     setTimeout(()=>{
-      document.querySelector('#docState').textContent = `${document.readyState}`
+      document.querySelector('#docState').textContent = `$DOM State: {document.readyState}`
       console.log(document.readyState)
     }, 800)
     
