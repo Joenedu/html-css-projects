@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pointer Events</title>
+  <style>
+    
+  </style>
+</head>
+
+<body>
+  <div class="app-container">
+    <h1>JS Events </h1>
+    <p id="docState"></p>
+    
+  </div>
+  
+  <script>
+  
+  document.querySelector('#docState').textContent = document.readyState
+  
+  console.log(document.readyState)
+  
+  document.addEventListener('DOMContentLoaded', ()=>{
+    
+      document.querySelector('#docState').textContent = document.readyState
+      console.log(document.readyState)
+    
+    setTimeout(()=>{
+      document.querySelector('#docState').textContent = `${document.readyState}`
+      console.log(document.readyState)
+    }, 800)
+    
+  })
+  </script>
+</body>
+
+</html>

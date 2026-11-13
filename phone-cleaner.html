@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Phone Cleaner UI</title>
+  <link rel="stylesheet" href="./phone-cleaner.css">
+</head>
+
+<body>
+  <header>
+    <span class="icon">
+      <img src="./assets/icons/arrow-left.svg" alt="left arrow">
+    </span>
+    <h2>Cleaner</h2>
+    <span class="icon">
+    <img src="./assets/icons/settings.svg" alt="" />
+    </span>
+  </header>
+  <main class="cleaner-dashboard">
+    <section class="card status-card">
+      <div class="progress-indicator">
+        <span class="icon"><img src="./assets/icons/progress-indicator.svg" alt="" /></span>
+      </div>
+      <div class="status-info">
+        <h3>Finished cleaning</h3>
+        <p>Total 128GB, 23GB available</p>
+      </div>
+      
+    </section>
+    <section class="card feature-card">
+      <div class="feature-icon">
+        <span class="icon">
+          <img src="./assets/icons/brand-facebook.svg" alt="">
+        </span>
+      </div>
+      <div class="feature-info">
+        <h3>Facebook cleaner</h3>
+        <p>Clear the items cached by Facebook</p>
+      </div>
+      <div class="action-button">
+        <button>Clear</button>
+      </div>
+    </section>
+    <section class="card dashboard-card">
+      <div class="dashboard-grid">
+        <div class="dashboard-item">
+          <span class="icon"><img src="./assets/icons/blocks.svg" alt="" /></span>
+          <h3>Apps</h3>
+          <p>23GB</p>
+        </div>
+        <div class="dashboard-item">
+          <span>
+            <img src="./assets/icons/folder.svg" alt="" />
+          </span>
+          <h3>Big files</h3>
+          <p>6.4GB</p>
+        </div>
+        <div class="dashboard-item">
+          <span class="icon"><img src="./assets/icons/database.svg" alt="" /></span>
+          <h3>App data</h3>
+          <p>495MB</p>
+        </div>
+        <div class="dashboard-item">
+          <span class="icon"><img src="./assets/icons/package.svg" alt="" /></span>
+          <h3>Packages</h3>
+          <p>OB</p>
+          <button>Clear</button>
+        </div>
+      </div>
+    </section>
+    <section class="card action-card">
+      <div class="card-icon">
+        <span class="icon">
+        <img src="./assets/icons/trash.svg" alt="" />
+        </span>
+      </div>
+      <div class="card-content">
+        <h3>Uninstall apps</h3>
+        <p>35 apps haven't been used for a long time, take a look.</p>
+      </div>
+      <div class="action-button">
+        <button>Uninstall</button>
+      </div>
+    </section>
+    <section class="card security-card">
+      <div class="card-icon">
+        <span class="icon">
+        <img src="../assets/icons/shield-lock.svg" alt="" />
+        </span>
+      </div>
+      <div class="card-content">
+        <h3>Security scan</h3>
+        <p>Scan your device for viruses</p>
+      </div>
+      <div class="action-button">
+        <button>Scan</button>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
